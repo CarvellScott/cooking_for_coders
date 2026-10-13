@@ -1,0 +1,22 @@
+#!/usr/bin/env -S pandoc -d
+css: ${.}/_css/style.css
+embed-resources: true
+from: markdown+auto_identifiers
+highlight-style: monochrome
+section-divs: true
+standalone: true
+table-of-contents: true
+template: ${.}/_templates/index_template.html
+toc-depth: 1
+metadata:
+  title: "Cooking for Coders"
+  author: "Rudolph Carvell Scott II"
+  subtitle: "A composition of my favorite recipes. Made with ❤️ (and pandoc, html5, css3, etc...)"
+  lang: en-US
+  epub-title-page: false
+variables:
+  classoption: openany # disables empty pages in .pdf
+  documentclass: book
+  geometry: margin=1in
+  mainfont: Palatino
+  papersize: A4

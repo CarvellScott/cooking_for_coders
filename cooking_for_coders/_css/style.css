@@ -1,0 +1,183 @@
+:root {
+  --link-color: #666;
+  --bg-color: white;
+  --text-color: black;
+  --font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-size: clamp(16px, 1rem + 0.25vw, 18px); /*This scales gently on phones*/
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --link-color: #7ab8ff;
+    --bg-color: #111;
+    --text-color: #ddd;
+  }
+}
+
+* { box-sizing: border-box; }
+
+a {
+  color: var(--text-color);
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+  color: var(--link-color);
+}
+
+body {
+  max-width: 42rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  margin: 0px auto;
+  background: var(--bg-color);
+  padding: 20px;
+  padding-top: 0px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+    line-height:1.2;
+    break-after: avoid;
+}
+
+header {
+  text-align: center;
+}
+
+ul, ol {
+    break-inside: avoid;
+}
+
+/* Hide all recipes by default */
+.level1 {
+  display: none;
+}
+
+/* Show recipe ONLY when targeted in URL */
+.level1:target {
+  display: block;
+}
+
+body > section {
+  width: 100%;
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+/* Setup for freaky checkbox hack */
+.toc-checkbox {
+  display: none;
+}
+
+/* NGL, some of this I vibed out */
+@media not print {
+    .toc-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #222;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      z-index: 1001;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      font-family: sans-serif;
+      font-weight: bold;
+      transition: transform 0.2s ease;
+    }
+
+    .toc-button:hover {
+      transform: scale(1.05);
+      background: #444;
+    }
+
+    /* Ghetto popover */
+    #TOC {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      width: 300px;
+      max-width: 80vw;
+      max-height: 60vh; 
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      z-index: 1000;
+      overflow-y: auto;
+      background: var(--bg-color);
+
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(20px);
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Freaky checkbox hack */
+    .toc-checkbox:checked ~ #TOC {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+}
+
+#TOC ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#TOC li {
+  margin-bottom: 8px;
+}
+
+#TOC a {
+  text-decoration: none;
+}
+
+#TOC a:hover {
+  text-decoration: underline;
+}
+
+#TOC::before {
+  content: "Contents";
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+
+@media print {
+  :root {
+      --bg-color: white;
+      --text-color: black;
+  }
+  body {
+    display: block;
+  }
+
+  #title-block-header {
+      break-after: page;
+  }
+  nav {
+      break-before: page;
+  }
+  .level1 {
+    display: block;
+    break-before: page;
+    padding: 0;
+  }
+  .toc-button {
+    display: none;
+  }
+}
