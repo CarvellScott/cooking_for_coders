@@ -28,6 +28,3 @@ This is one of the first recipes I learned that is "actual cooking" but it's sti
 ## Notes  
 
 - Making sure the flour and yogurt mix together is the most important part. Otherwise when you bake the bread, the center will likely still be moist and/or gooey.
-
-[ingredient link]: example.com
-

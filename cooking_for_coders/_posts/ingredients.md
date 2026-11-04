@@ -28,6 +28,7 @@ Be sure to replace spaces in the link with pluses.
 [egg whites]: http://heb.com/search?q=egg+whites
 [eggs]: http://heb.com/search?q=eggs
 [erythritol]: http://heb.com/search?q=erythritol
+[enriched long grain white rice]: https://www.heb.com/search?esc=true&q=Enriched%20Long%20Grain%20White%20Rice
 [flour]: http://heb.com/search?q=flour
 [garlic powder]: http://heb.com/search?q=garlic+powder
 [garlic]: http://heb.com/search?q=garlic
