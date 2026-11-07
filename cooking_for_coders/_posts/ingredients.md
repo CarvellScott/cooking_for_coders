@@ -17,6 +17,7 @@ Be sure to replace spaces in the link with pluses.
 [butter]: http://heb.com/search?q=butter
 [caramel]: http://heb.com/search?q=caramel
 [cheddar cheese]: http://heb.com/search?q=cheddar+cheese
+[chicken breasts]: https://heb.com/search?q=chicken+breasts
 [chocolate chips]: http://heb.com/search?q=chocolate+chips
 [cinnamon]: http://heb.com/search?q=cinnamon
 [coconut flakes]: http://heb.com/search?q=coconut+flakes
@@ -27,8 +28,8 @@ Be sure to replace spaces in the link with pluses.
 [dairy sour cream]: http://heb.com/search?q=dairy+sour+cream
 [egg whites]: http://heb.com/search?q=egg+whites
 [eggs]: http://heb.com/search?q=eggs
-[erythritol]: http://heb.com/search?q=erythritol
 [enriched long grain white rice]: https://www.heb.com/search?esc=true&q=Enriched%20Long%20Grain%20White%20Rice
+[erythritol]: http://heb.com/search?q=erythritol
 [flour]: http://heb.com/search?q=flour
 [garlic powder]: http://heb.com/search?q=garlic+powder
 [garlic]: http://heb.com/search?q=garlic
@@ -46,8 +47,10 @@ Be sure to replace spaces in the link with pluses.
 [nuts]: http://heb.com/search?q=nuts
 [oatmeal]: http://heb.com/search?q=oatmeal
 [olive oil]: http://heb.com/search?q=olive+oil
+[onions]: https://heb.com/search?q=onions
 [orange]: http://heb.com/search?q=orange
 [oregano]: http://heb.com/search?q=oregano
+[peas and carrots]: http://heb.com/search?q=peas+and+carrots
 [panko breadcrumbs]: http://heb.com/search?q=panko+breadcrumbs
 [paprika]: http://heb.com/search?q=paprika
 [parmesan cheese]: http://heb.com/search?q=parmesan+cheese
@@ -61,8 +64,10 @@ Be sure to replace spaces in the link with pluses.
 [salt]: http://heb.com/search?q=salt
 [scallions]: http://heb.com/search?q=scallions
 [sea salt]: http://heb.com/search?q=sea+salt
+[seasame oil]: https://heb.com/search?q=seasame+oil
 [sesame seeds]: http://heb.com/search?q=sesame+seeds
 [shortening]: http://heb.com/search?q=shortening
+[soy sauce]: https://heb.com/search?q=soy+sauce
 [spaghetti sauce]: http://heb.com/search?q=spaghetti+sauce
 [strawberries]: http://heb.com/search?q=strawberries
 [sugar]: http://heb.com/search?q=sugar
